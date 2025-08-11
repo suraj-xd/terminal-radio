@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Terminal Radio Player
+# Simple script to start the radio player
+
+cd "$(dirname "$0")"
+
+echo "🎵 Starting Terminal Radio Player..."
+echo ""
+
+# Check if mpv is installed
+if ! command -v mpv &> /dev/null; then
+    echo "❌ mpv is not installed. Please install it first:"
+    echo "   brew install mpv"
+    echo ""
+    exit 1
+fi
+
+# Build if needed
+if [ ! -d "dist" ] || [ "src/index.ts" -nt "dist/index.js" ]; then
+    echo "🔨 Building project..."
+    npm run build
+    echo ""
+fi
+
+# Start the radio player
+node dist/index.js

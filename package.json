@@ -1,0 +1,43 @@
+{
+  "name": "terminal-radio",
+  "version": "1.0.3",
+  "description": "Simple terminal radio player",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "terminal-radio": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "radio": "npm run build && npm start",
+    "play": "./radio",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "radio",
+    "terminal",
+    "cli",
+    "music",
+    "streaming",
+    "audio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
