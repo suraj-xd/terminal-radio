@@ -2,6 +2,8 @@
 
 A simple, fast terminal-based radio player built with TypeScript. Stream thousands of radio stations directly in your terminal!
 
+<img width="446" height="159" alt="Screenshot 2025-08-11 at 11 16 43 PM" src="https://github.com/user-attachments/assets/9277eb3b-9bb2-4785-a0fc-87f9ee68ff5a" />
+
 ## Features
 
 - 🎧 **Popular Stations**: Pre-loaded with popular stations (BBC, Jazz24, Lofi Hip Hop, etc.)
