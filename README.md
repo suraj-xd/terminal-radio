@@ -33,10 +33,13 @@ sudo apt install vlc
 
 ### Installation & Usage
 
-**Option 1: Install from npm (Recommended)**
+**Option 1: Install from npm or run using npx (Recommended)**
 ```bash
 npm install -g terminal-radio
 terminal-radio
+```
+```bash
+npx terminal-radio
 ```
 
 **Option 2: Development/Local Installation**
